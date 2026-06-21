@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>爱游戏 · 日常查询与延伸阅读</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body {
+			background-color: #f9fafc;
+			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+			color: #1e293b;
+			line-height: 1.7;
+			padding: 0 1.25rem;
+			-webkit-font-smoothing: antialiased;
+		}
+		.page-wrap {
+			max-width: 760px;
+			margin: 0 auto;
+			padding: 2.8rem 0 4rem;
+		}
+
+		/* hero */
+		.hero {
+			margin-bottom: 3.2rem;
+		}
+		.hero h1 {
+			font-size: 2.4rem;
+			font-weight: 550;
+			letter-spacing: -0.02em;
+			color: #0f172a;
+			margin-bottom: 1rem;
+			line-height: 1.2;
+		}
+		.hero p {
+			font-size: 1.1rem;
+			color: #475569;
+			max-width: 620px;
+			margin-top: 0.4rem;
+		}
+
+		/* 分隔线 */
+		.divider {
+			border: 0;
+			height: 1px;
+			background: linear-gradient(to right, transparent, #d1d5db, transparent);
+			margin: 2.8rem 0;
+		}
+
+		/* 通用标题 */
+		h2 {
+			font-size: 1.6rem;
+			font-weight: 500;
+			letter-spacing: -0.01em;
+			color: #0f172a;
+			margin-bottom: 1.2rem;
+			border-left: 4px solid #a5b4fc;
+			padding-left: 1rem;
+		}
+
+		/* 特点卡片网格 */
+		.feature-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+			gap: 1.6rem;
+			margin: 2rem 0 1.2rem;
+		}
+		.feature-card {
+			background-color: #ffffff;
+			border-radius: 20px;
+			padding: 1.6rem 1.4rem;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.02);
+			transition: box-shadow 0.2s ease, transform 0.15s;
+		}
+		.feature-card:hover {
+			box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+			transform: translateY(-2px);
+		}
+		.feature-card h3 {
+			font-size: 1.15rem;
+			font-weight: 520;
+			margin-bottom: 0.4rem;
+			color: #0f172a;
+		}
+		.feature-card p {
+			font-size: 0.95rem;
+			color: #475569;
+		}
+
+		/* 说明 / 场景段落 */
+		.explainer p, .scenario p {
+			margin-bottom: 1rem;
+			color: #334155;
+		}
+		.explainer a, .scenario a, .faq-wrap a {
+			color: #2563eb;
+			text-decoration: none;
+			border-bottom: 1px solid #bfdbfe;
+			transition: border-color 0.2s;
+		}
+		.explainer a:hover, .scenario a:hover, .faq-wrap a:hover {
+			border-bottom-color: #2563eb;
+		}
+
+		/* 提示块 */
+		.tip-box {
+			background: #f1f5f9;
+			border-radius: 24px;
+			padding: 1.8rem 2rem;
+			margin: 2.4rem 0;
+		}
+		.tip-box p {
+			color: #1e293b;
+			font-size: 1.02rem;
+		}
+
+		/* FAQ 摘要 */
+		.faq-wrap {
+			margin: 2rem 0 1.6rem;
+		}
+		.faq-item {
+			border-bottom: 1px solid #e2e8f0;
+			padding: 1.2rem 0;
+		}
+		.faq-item:first-child {
+			padding-top: 0;
+		}
+		.faq-q {
+			font-weight: 520;
+			color: #0f172a;
+			margin-bottom: 0.25rem;
+		}
+		.faq-a {
+			color: #475569;
+			font-size: 0.98rem;
+		}
+
+		/* 底部 */
+		.footer-links {
+			margin-top: 3.5rem;
+			padding-top: 2rem;
+			border-top: 1px solid #e2e8f0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.2rem 2.2rem;
+			font-size: 0.9rem;
+			color: #64748b;
+		}
+		.footer-links a {
+			color: #475569;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+		}
+		.footer-links a:hover {
+			border-bottom-color: #94a3b8;
+		}
+
+		/* 响应式 */
+		@media (max-width: 500px) {
+			.hero h1 { font-size: 1.9rem; }
+			.feature-grid { gap: 1rem; }
+			.tip-box { padding: 1.4rem 1.2rem; }
+			.page-wrap { padding: 1.8rem 0 3rem; }
+		}
+	</style>
+</head>
+<body>
+<div class="page-wrap">
+
+	<!-- hero 区 -->
+	<div class="hero">
+		<h1>查询 · 对照 · 延伸阅读</h1>
+		<p>一个安静的起点——为日常翻阅、资料对比和兴趣延伸提供简洁路径。</p>
+	</div>
+
+	<!-- 优势/特点卡片 -->
+	<h2>翻阅时，值得留意的几件事</h2>
+	<div class="feature-grid">
+		<div class="feature-card">
+			<h3>条目对照</h3>
+			<p>并排浏览不同来源的说明，快速找到表述差异与共识部分。</p>
+		</div>
+		<div class="feature-card">
+			<h3>归类整理</h3>
+			<p>内容按话题自然分组，减少反复跳转，适合沉下心来逐段阅读。</p>
+		</div>
+		<div class="feature-card">
+			<h3>轻量引用</h3>
+			<p>页面标注常用参考来源，方便延伸检索或回查原始信息。</p>
+		</div>
+		<div class="feature-card">
+			<h3>无干扰版式</h3>
+			<p>窄栏正文、克制用色，让注意力集中在内容本身，而非装饰。</p>
+		</div>
+	</div>
+
+	<hr class="divider">
+
+	<!-- 说明区：日常查询与场景 -->
+	<h2>从一次简单查询开始</h2>
+	<div class="explainer">
+		<p>
+			很多时候，我们打开一个页面只是想确认某个名称、一段描述或一类归纳。 
+			在 <a href="https://main-web-i-game.com.cn">爱游戏</a> 的浏览中，你常常能同时看到概括性介绍和较细致的条目，两者互为参照。 
+			这种并列结构不是为了罗列，而是让阅读者自行比对、提取自己需要的部分。
+		</p>
+		<p>
+			页面里偶尔会加入简短的注释或外链提示，帮助你在读完后决定是否要进一步查阅其他资料。 
+			没有自动跳转，也没有突兀的弹窗——所有的延伸都交给你的节奏。
+		</p>
+	</div>
+
+	<h2>常见的使用场景</h2>
+	<div class="scenario">
+		<p>
+			<strong>想快速了解某个概念的大致范围</strong> — 先读概括段落，再看条目列表，基本能在两三次扫视中建立轮廓。
+		</p>
+		<p>
+			<strong>需要对比不同表述</strong> — 同一主题下可能收录了两种常见的说法或分类方式，方便你判断哪种更贴合自己的理解。
+		</p>
+		<p>
+			<strong>阅读中途想停下来思考</strong> — 段落间距和标题层级经过调整，每一段都有自然的停顿感，适合边读边记。
+		</p>
+	</div>
+
+	<!-- 提示块 -->
+	<div class="tip-box">
+		<p>
+			不管在哪个页面，你都可以把当前内容当作一个「中转站」—— 
+			读完之后再去其他地方验证、补充或反驳。 
+			保持一种温和的怀疑，反而能让信息变得更清晰。
+		</p>
+	</div>
+
+	<hr class="divider">
+
+	<!-- FAQ 摘要 -->
+	<h2>几个常被问到的点</h2>
+	<div class="faq-wrap">
+		<div class="faq-item">
+			<div class="faq-q">这些内容会频繁更新吗？</div>
+			<div class="faq-a">视话题而定。基础条目相对稳定，涉及动态信息的部分会不定期调整，没有固定周期。</div>
+		</div>
+		<div class="faq-item">
+			<div class="faq-q">能不能直接复制段落用于笔记？</div>
+			<div class="faq-a">可以。摘引时建议保留原意，并适当注明来源（包括 <a href="https://main-web-i-game.com.cn">爱游戏</a> 这个站点本身）。</div>
+		</div>
+		<div class="faq-item">
+			<div class="faq-q">页面里提到的外部链接可靠吗？</div>
+			<div class="faq-a">我们倾向于选择公认度较高的参考来源，但无法保证所有链接永远有效。如果发现失效，欢迎通过站内渠道反馈。</div>
+		</div>
+	</div>
+
+	<!-- 底部链接区 -->
+	<div class="footer-links">
+		<span><a href="https://main-web-i-game.com.cn">爱游戏</a></span>
+		<span>阅读索引</span>
+		<span>常见问题</span>
+		<span>关于这个站点</span>
+		<span style="color:#94a3b8;">© quiet reading</span>
+	</div>
+</div>
+</body>
+</html>
